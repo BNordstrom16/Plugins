@@ -1,0 +1,31 @@
+<h1>Show Authentication!</h1>
+
+<button (click)="isAvailable()">
+  is Available
+</button>
+
+<button (click)="verify()">
+  Verify
+</button>
+
+<button (click)="verifyWithFallback()">
+  Verify with Fallback
+</button>
+
+<div >
+  <h1 *ngIf="face">
+    This phone has Face ID!
+  </h1>
+  <h1 *ngIf="!face">
+    This phone has Touch ID!
+  </h1>
+</div>
+
+<div>
+  <h1 *ngIf="didWork">
+    ID did work!
+  </h1>
+  <h1 *ngIf="!didWork">
+    ID didn't work!
+  </h1>
+</div>

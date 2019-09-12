@@ -1,0 +1,25 @@
+{
+  "name": "capacitor-app",
+  "version": "1.0.0",
+  "description": "An Amazing Capacitor App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "capacitor",
+    "mobile"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "^1.2.0",
+    "@capacitor/cli": "^1.2.0",
+    "@capacitor/core": "^1.2.0",
+    "@capacitor/ios": "^1.2.0",
+    "@ionic-native/core": "^5.13.0",
+    "@ionic-native/fingerprint-aio": "^5.13.0",
+    "capacitor-fingerprint-auth": "0.0.2",
+    "cordova-plugin-fingerprint-aio": "^2.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+<h1>Get Geolocation!</h1>
+
+<button (click)="getLocation()">
+  Get Location!
+</button>
+
+<div>
+  <table>
+    <tr>
+      <th>
+        Latitude
+      </th>
+      <th>
+        Longitude
+      </th>
+      <th>
+        Accuracy
+      </th>
+      <th>
+        Altitude Accuracy
+      </th>
+      <th>
+        Altitude
+      </th>
+      <th>
+        Speed
+      </th>
+      <th>
+        Heading
+      </th>
+    </tr>
+    <tr>
+      <td *ngFor="let prop of allValues">
+        {{ prop }}
+      </td>
+    </tr>
+  </table>
+</div>

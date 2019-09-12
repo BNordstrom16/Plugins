@@ -1,0 +1,9 @@
+<h1>Accelerometer!</h1>
+
+<button (click)="watchAccel()">Accel Start</button>
+
+<div *ngIf="accel">
+  <p>x: {{ accel.x }}</p>
+  <p>y: {{ accel.y }}</p>
+  <p>z: {{ accel.z }}</p>
+</div>

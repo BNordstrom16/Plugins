@@ -1,0 +1,7 @@
+{
+  "appId": "com.plugins.www",
+  "appName": "Plugins",
+  "bundledWebRuntime": true,
+  "npmClient": "npm",
+  "webDir": "../dist/Plugins"
+}

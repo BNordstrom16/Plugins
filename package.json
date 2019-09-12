@@ -19,6 +19,13 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
+    "@capacitor/cli": "^1.2.0",
+    "@capacitor/core": "^1.2.0",
+    "@ionic-native/core": "^5.13.0",
+    "@ionic-native/fingerprint-aio": "^5.13.0",
+    "capacitor": "^0.5.5",
+    "capacitor-fingerprint-auth": "0.0.2",
+    "cordova-plugin-fingerprint-aio": "^2.0.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
