@@ -1,9 +1,14 @@
-<h1>Accelerometer!</h1>
+<h1 class="center-text">Accelerometer!</h1>
 
-<button (click)="watchAccel()">Accel Start</button>
-
-<div *ngIf="accel">
-  <p>x: {{ accel.x }}</p>
-  <p>y: {{ accel.y }}</p>
-  <p>z: {{ accel.z }}</p>
+<div>
+  <button mat-raised-button class="center-text" (click)="watchAccel()">Accel Start</button>
+</div>
+<div *ngIf="accel" class="container">
+  <div class="flex-direction-col">
+    <p>x: {{ accel.x }}</p>
+    <p>y: {{ accel.y }}</p>
+    <p>z: {{ accel.z }}</p>
+    <p>a: {{ accel.a }}</p>
+    <p>b: {{ accel.b }}</p>
+  </div>
 </div>

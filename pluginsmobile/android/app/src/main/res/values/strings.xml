@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">Plugins</string>
-    <string name="title_activity_main">Plugins</string>
-    <string name="package_name">com.plugins.www</string>
-    <string name="fileprovider_authority">com.plugins.www.fileprovider</string>
-    <string name="custom_url_scheme">com.plugins.www</string>
-</resources>

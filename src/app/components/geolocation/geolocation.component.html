@@ -1,9 +1,10 @@
-<h1>Get Geolocation!</h1>
+<h1 class="center-text">Get Geolocation!</h1>
 
-<button (click)="getLocation()">
-  Get Location!
-</button>
-
+<div class="display-center">
+  <button mat-raised-button (click)="getLocation()">
+    Get Location!
+  </button>
+</div>
 <div>
   <table>
     <tr>
@@ -30,8 +31,8 @@
       </th>
     </tr>
     <tr>
-      <td *ngFor="let prop of allValues">
-        {{ prop }}
+      <td *ngFor="let value of allValues">
+        {{ value }}
       </td>
     </tr>
   </table>

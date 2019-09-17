@@ -1,25 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div class="center-text">
   <h1>
     Plugins!
   </h1>
 </div>
-<div>
-  <button routerLink="/camera-plugin">
-    Camera
-  </button>
-  <button routerLink="/show-auth-capacitor">
-    Face ID - Capacitor
-  </button>
-  <button routerLink="/show-auth-cordova">
-    Face ID - Cordova
-  </button>
-  <button routerLink="/geo-plugin">
-    GeoLocation
-  </button>
-  <button routerLink="/accel-plugin">
-    Accelerometer
-  </button>
+<div class="container">
+  <div class="justify-content-even flex-wrap">
+    <button mat-raised-button routerLink="/camera-plugin">
+      Camera
+    </button>
+    <button mat-raised-button routerLink="/show-auth-capacitor">
+      Face ID - Capacitor
+    </button>
+    <button mat-raised-button routerLink="/show-auth-cordova">
+      Face ID - Cordova
+    </button>
+    <button mat-raised-button routerLink="/geo-plugin">
+      GeoLocation
+    </button>
+    <button mat-raised-button routerLink="/accel-plugin">
+      Accelerometer
+    </button>
+  </div>
 </div>
 
 <router-outlet></router-outlet>

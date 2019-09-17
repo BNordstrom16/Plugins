@@ -6,16 +6,20 @@ import { FingerPrintAuth } from 'capacitor-fingerprint-auth';
   templateUrl: './auth-capacitor.component.html',
   styleUrls: ['./auth-capacitor.component.scss']
 })
-export class AuthCapacitorComponent {
+export class AuthCapacitorComponent implements OnInit {
   public face: boolean;
   public didWork = false;
   public authData: boolean;
   public auth: FingerPrintAuth;
 
   public async isAvailable(): Promise<void> {
-    await this.auth.available().then(result => {
-      console.log(result);
-    });
+    try {
+      await this.auth.available().then(result => {
+        this.face = result.faceId;
+      });
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   public async verify(): Promise<void> {
@@ -34,7 +38,10 @@ export class AuthCapacitorComponent {
     }
   }
 
-  constructor() {
+  public ngOnInit(): void {
     this.auth = new FingerPrintAuth();
+  }
+
+  constructor() {
   }
 }

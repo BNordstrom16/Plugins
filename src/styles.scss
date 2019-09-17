@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+.container {
+  display: flex;
+}
+
+.display-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.center-text {
+  text-align: center;
+}

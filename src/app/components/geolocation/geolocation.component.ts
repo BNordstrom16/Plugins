@@ -11,10 +11,8 @@ const { Geolocation } = Plugins;
 export class GeolocationComponent {
   public location: GeolocationPosition;
   public allValues: number[] = [];
-  public allProperties: any[] = [];
   public async getLocation() {
     this.location = await Geolocation.getCurrentPosition();
-
     this.allValues[0] = this.location.coords.latitude;
     this.allValues[1] = this.location.coords.longitude;
     this.allValues[2] = this.location.coords.accuracy;

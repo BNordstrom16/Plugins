@@ -7,7 +7,31 @@ import { CameraComponent } from './camera/camera.component';
 import { AuthCapacitorComponent } from './auth-capacitor/auth-capacitor.component';
 import { GeolocationComponent } from './geolocation/geolocation.component';
 import { AccelComponent } from './accel/accel.component';
-import { AuthCordovaComponent } from './auth-cordova/auth-cordova.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {
+  DateAdapter,
+  MAT_FORM_FIELD_DEFAULT_OPTIONS,
+  MatBottomSheetModule,
+  MatButtonModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatDatepickerModule,
+  MatDialogModule,
+  MatFormFieldDefaultOptions,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatMenuModule,
+  MatNativeDateModule,
+  MatOptionModule,
+  MatProgressSpinnerModule,
+  MatRadioModule,
+  MatSelectModule,
+  MatSnackBarModule,
+  MatButton,
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -16,11 +40,12 @@ import { AuthCordovaComponent } from './auth-cordova/auth-cordova.component';
     AuthCapacitorComponent,
     GeolocationComponent,
     AccelComponent,
-    AuthCordovaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
